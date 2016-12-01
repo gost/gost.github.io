@@ -1,0 +1,30 @@
+---
+layout: post
+title: "GOST Presentation At OSGeo.nl Day"
+date: 2016-11-22 16:54:46
+author: Tim
+categories: 
+- blog 
+- Presentation
+img: geobuzz_1.jpg
+thumb: thumb01.jpg
+---
+
+OSGeo.nl invited Bert and me to give a presentation about SensorThings and our open-source solution GOST during the OSGeo.nl day which took place at the yearly GeoBuzz conference in 's-Hertogenbosh The Netherlands.
+<!--more-->
+
+###Presentation
+The presentation does not have much text and probably needs some explanation but if you want to take a look than you can find it [here](https://docs.google.com/a/geodan.nl/presentation/d/1THqF9LFUiNv6voH05IPtdPQhcp1wcRG5szBvtW4Mkmg/edit?usp=sharing) 
+
+###Demo
+In the demo we wanted to show how easy it is to work with SensorThings and GOST and reserved 10 minutes for it.
+Maybe it was a bit technical but after 10 minutes we had a new instance of GOST running including PostGIS, Mosquitto 
+and NodeRED using docker-compose. After adding a Thing, Location, Datastream, Sensor and ObservedProperty using postman and explaining it
+we started pushing gyroscope sensor readings from a phone to GOST using MQTT showing a live graph in the GOST dashboard. 
+To show how easy it is to also do something with the live data we created a NodeRED flow which sended an
+automated tweet when the phone screen was facing down.      
+All in 10 minutes, success...
+
+![image](/assets/img/blog/tweet_geobuzz.jpg){:class="img-responsive center-image"}
+
+![image](/assets/img/blog/geobuzz_2.jpg){:class="img-responsive center-image"}

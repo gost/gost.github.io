@@ -21,6 +21,12 @@
 		padding: 0px;
 	} 
 
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+
 body { 
 	background: #ffffff; 
 	margin: 0; 
