@@ -10,7 +10,6 @@ permalink: /
         <h2>IoT Platform</h2>
         <h3>implementing the OGC SensorThings API standard</h3>
     </div>
-
     <div class="row centered info-desc">
         <div class="col-md-4">
             <i class="fa fa-heart-o"></i>
@@ -31,21 +30,47 @@ permalink: /
             <p><br/><a href="https://golang.org/" class="btn btn-theme">More Info</a></p>
         </div>
     </div>
+    <div>
+        <img id="ogc-logo" src="{{ "/assets/img/ogc_logo.png" | prepend: site.baseurl }}"  >
+        </img>
+    </div>
     <div class="row centered st-desc">
         <h1>OGC SensorThings API</h1>
         <h2> An Open Geospatial Consortium (OGC) standard providing an open and unified framework to interconnect IoT sensing devices, data, and applications over the Web. It is an open standard addressing the syntactic interoperability and semantic interoperability of the Internet of Things</h2>
     </div>
-</div><! --/service -->
-
-<div class="container mtb">
-    <div class="row">
-        <div class="col-lg-3">
-            <h4>Latest Posts</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['blog'] limit:5 %} 
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
-            {% endfor %} 
+    <div class="row centered info-desc">
+        <div class="col-md-4">
+            <h4>Lower Overhead</h4>
+            <p>It permits the proliferation of new high value services with lower overhead of development and wider reach</p>
         </div>
-
-    </div><! --/row -->
-</div><! --/container -->
+        <div class="col-md-4">
+            <h4>Low Risk</h4>
+            <p>It lowers the risks, time and cost across a full IoT product cycle</p>
+        </div>
+        <div class="col-md-4">
+            <h4>Simplify</h4>
+            <p>It simplifies and accelerates the development of IoT applications without worrying about the protocols of the different IoT devices,</p>
+        </div>
+    </div>
+    <div>
+        <object id="moby" data="{{ "/assets/img/moby.svg" | prepend: site.baseurl }}" type="image/svg+xml" >
+        </object>
+    </div>
+    <div class="row centered st-desc">
+        <h1>Easy deployment</h1>
+    </div>
+    <div class="row centered info-desc" height="500px">
+        <div class="col-md-4">
+            <h4>Docker</h4>
+            <p>GOST can be easily deployed using our docker images, head over to our installation guide to see how</p>
+        </div>
+        <div class="col-md-4">
+            <h4>Binaries</h4>
+            <p>Don't want to use docker? Get the latest binaries and see in our installation guide how it's done</p>
+        </div>
+        <div class="col-md-4">
+            <h4>Platforms</h4>
+            <p>GOST supports many platform and is tested on Windows 10, Ubuntu 16.04, Raspbian Jessie (yes it even works on a RaspberryPi 2)</p>
+        </div>
+    </div>
+</div><! --/service -->
