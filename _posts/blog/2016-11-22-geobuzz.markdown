@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GOST Presentation at OSGeo.nl day"
+title: "GOST presentation at OSGeo.nl day"
 date: 2016-11-22 16:54:46
 author: Tim
 categories: 
