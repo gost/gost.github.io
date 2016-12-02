@@ -4,8 +4,7 @@ title: "GOST presentation at OSGeo.nl day"
 date: 2016-11-22 16:54:46
 author: Tim
 categories: 
-- blog 
-- Presentation
+- blog
 img: geobuzz_1.jpg
 thumb: osgeo.png
 ---

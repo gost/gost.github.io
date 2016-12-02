@@ -1,5 +1,5 @@
 ---
-layout: changelog
+layout: changelog_front
 title: Changelog
 permalink: /changelog/
 ---
@@ -20,8 +20,9 @@ permalink: /changelog/
                     {% endfor %}
                 </ul>
                 <h3>DOCKER</h3>
-                <a href="https://hub.docker.com/r/geodan/gost/tags/">geodan/gost:0.3</a></br>
-                <a href="https://hub.docker.com/r/geodan/gost/tags/">geodan/gost-db:0.3</a>
+                {% for d in post.docker %}
+                    <a href="https://hub.docker.com/r/geodan/gost/tags/">{{ d }}</a></br>
+                {% endfor %}
                 <h3>BINARIES</h3>
                 <a href="{{ post.binaries }}">DOWNLOAD PAGE</a>
             </div>

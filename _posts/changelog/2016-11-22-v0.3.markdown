@@ -18,5 +18,5 @@ docker:
 - geodan/gost-db:0.3
 binaries:
 - https://github.com/Geodan/gost/releases/tag/0.3
+thumb: gost.png
 ---
-Test ikel 
