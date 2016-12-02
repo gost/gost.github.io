@@ -14,7 +14,9 @@ layout: default
             <p><csmall>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</csmall></p>
               
             {{ content }}
-
+            {% if post.comments != 0 %}
+            {% include  disqus.html %}
+            {% endif %}
             <div class="spacing"></div>
             <!-- <h6>SHARE:</h6>
             <p class="share">

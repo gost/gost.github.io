@@ -12,6 +12,8 @@ gems:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+disqus_shortname: gost-1
+
 # Build settings
 markdown: kramdown
 permalink: /:categories/:title
