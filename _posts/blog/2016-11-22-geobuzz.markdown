@@ -10,7 +10,7 @@ img: geobuzz_1.jpg
 thumb: thumb01.jpg
 ---
 
-OSGeo.nl invited Bert and me to give a presentation about SensorThings and our open-source solution GOST during the [OSGeo.nl](https://osgeo.nl/) day which took place at the yearly [GeoBuzz](http://geobuzz.nl/) conference in 's-Hertogenbosh The Netherlands.
+OSGeo.nl invited Bert and me to give a presentation about [OGC SensorThings API](https://github.com/opengeospatial/sensorthings) and our open-source solution [GOST](https://github.com/geodan/gost) during the [OSGeo.nl](https://osgeo.nl/) day which took place at the yearly [GeoBuzz](http://geobuzz.nl/) conference in 's-Hertogenbosh The Netherlands.
 <!--more-->
 
 ### Presentation slides
@@ -18,12 +18,13 @@ The presentation slides does not have much text and probably needs some explanat
 
 ### Demo
 In the demo we wanted to show how easy it is to work with OGC SensorThings API and GOST and reserved 10 minutes for it.
-Maybe it was a bit technical but after 10 minutes we had a new instance of GOST running including PostGIS, Mosquitto 
-and Node-RED using docker-compose. After adding a Thing, Location, Datastream, Sensor and ObservedProperty using Postman and explaining it
+Maybe it was a bit technical but after 10 minutes we had a new instance of GOST running including [PostGIS](http://www.postgis.net/), [Mosquitto](https://mosquitto.org/) 
+and [Node-RED](https://nodered.org/) using [Docker](https://www.docker.com/). After adding a Thing, Location, Datastream, Sensor and ObservedProperty using [Postman](https://www.getpostman.com/) and explaining it
 we started pushing gyroscope sensor readings from a phone to GOST using MQTT showing a live graph in the GOST dashboard. 
 To show how easy it is to also do something with the live data we created a Node-RED flow which sended an
-automated tweet when the phone screen was facing down.      
-All in 10 minutes, success...
+automated tweet when the phone screen was facing down.
+
+Som complete installation, configuration, sensor information publishing and event stream processing all working live on stage in 10 minutes, success...
 
 ![image](/assets/img/blog/tweet_geobuzz.jpg){:class="img-responsive center-image"}
 
