@@ -26,6 +26,6 @@ automated tweet when the phone screen was facing down.
 
 So complete installation, configuration, sensor information publishing and event stream processing all working live on stage in 10 minutes, success...
 
-![image](/assets/img/blog/tweet_geobuzz.jpg){:class="img-responsive center-image"}
+![image](/assets/img/blog/tweet_geobuzz.jpg){:class="img-responsive center-image" alt="tweet end demo"}
 
-![image](/assets/img/blog/geobuzz_2.jpg){:class="img-responsive center-image"}
+![image](/assets/img/blog/geobuzz_2.jpg){:class="img-responsive center-image" alt="GOST GeoBuzz"}
