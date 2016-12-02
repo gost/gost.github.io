@@ -5,6 +5,7 @@ date: 2016-11-22 16:54:46
 author: Tim
 categories: 
 - blog
+- presentation
 img: geobuzz_1.jpg
 thumb: osgeo.png
 ---
