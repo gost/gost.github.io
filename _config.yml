@@ -2,10 +2,14 @@
 
 # Site settings
 title: GOST
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "GOST is an open source implementation of the SensorThings API in the Go programming language initiated by Geodan. It contains easily deployable server software and a Javascript client. The software can be installed on many platforms/devices (e.g. Windows, Linux, Mac OS and Raspberry Pi)"
 analytics: UA-88292336-1
 baseurl: "" #important: start with /
-url: "http://yourdomain.com"
+url: "http://gost.github.io"
+
+# Other settings
+gems:
+  - jekyll-sitemap
 
 # Build settings
 markdown: kramdown
