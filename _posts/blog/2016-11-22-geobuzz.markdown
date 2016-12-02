@@ -7,7 +7,7 @@ categories:
 - blog 
 - Presentation
 img: geobuzz_1.jpg
-thumb: thumb01.jpg
+thumb: osgeo.png
 ---
 
 OSGeo.nl invited Bert and me to give a presentation about [OGC SensorThings API](https://github.com/opengeospatial/sensorthings) and our open-source solution [GOST](https://github.com/geodan/gost) during the [OSGeo.nl](https://osgeo.nl/) day which took place at the yearly [GeoBuzz](http://geobuzz.nl/) conference in 's-Hertogenbosh The Netherlands.

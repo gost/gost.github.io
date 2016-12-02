@@ -311,7 +311,7 @@ a:focus {
 }
 
 .mtb {
-	margin-top: 80px;
+	margin-top: 15px;
 	margin-bottom: 80px;
 }
 
@@ -493,13 +493,13 @@ code {
 #blue {
 	background: {{ site.colors.primary }};
 	margin-top: 35px;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 	padding-top: 25px;
 	padding-bottom: 0px;
 }
 
 #blue h3 {
-	color: #505151;
+	color: {{ site.colors.text_dark }};
 	margin-left: 15px;
 }
 
@@ -526,7 +526,7 @@ code {
 }
 
 .ctitle {
-	color: {{ site.colors.primary }};
+	color: {{ site.colors.text_dark }};
 	font-weight: 700;
 	margin-bottom: 15px;
 }
