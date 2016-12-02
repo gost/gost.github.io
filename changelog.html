@@ -1,22 +1,33 @@
 ---
 layout: changelog
-title: changelog
+title: Changelog
 permalink: /changelog/
 ---
 
-<div id="service">
-    <div class="container">
-        <div>
-            <h1>GOST V0.3 - 5 December 2016</h1>
-            <ul>
-                <li>Passing CORE and CRUD tests</li>
-            </ul>
-            <h3>DOCKER</h3>
-            <a href="https://hub.docker.com/r/geodan/gost/tags/">geodan/gost:0.3</a></br>
-            <a href="https://hub.docker.com/r/geodan/gost/tags/">geodan/gost-db:0.3</a>
-            <h3>BINARIES</h3>
-            <a href="https://github.com/Geodan/gost/releases/tag/0.3">DOWNLOAD PAGE</a>
-            </br></br></br></br>
-        </div>
-    </div><! --/container -->
-</div><! --/service -->
+<div class="container mtb">
+    <div class="row">
+
+        <! -- CHANGELOG POSTS LIST -->
+        <div class="col-lg-8">
+            {% for post in site.categories['changelog'] %}
+            <div class="changelog">
+                <h1>GOST {{ post.version }} - {{ post.published }}</h1>
+                <ul>
+                    {% for change in post.changes %}
+                    <p>
+                        <li>{{ change }}</li>
+                    </p>
+                    {% endfor %}
+                </ul>
+                <h3>DOCKER</h3>
+                <a href="https://hub.docker.com/r/geodan/gost/tags/">geodan/gost:0.3</a></br>
+                <a href="https://hub.docker.com/r/geodan/gost/tags/">geodan/gost-db:0.3</a>
+                <h3>BINARIES</h3>
+                <a href="{{ post.binaries }}">DOWNLOAD PAGE</a>
+            </div>
+            <div class="hline"></div>
+            <div class="spacing"></div>
+            {% endfor %}
+        </div><! --/col-lg-8 -->
+    </div><! --/row -->
+</div><! --/container -->

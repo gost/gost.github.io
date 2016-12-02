@@ -155,6 +155,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #00b3fe;
 }
 
+.changelog li {
+    line-height: 3px;
+}
+
 p { 
 	padding: 0; 
 	margin-bottom: 12px; 

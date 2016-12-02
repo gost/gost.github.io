@@ -1,0 +1,22 @@
+---
+layout: changelog
+version: "V0.3"
+published: "2016-12-05"
+categories: 
+- changelog 
+changes: 
+- Passing CORE and CRUD tests 
+- Endpoints now accepting lower case urls - http://host/v1.0/datastreams(1)/observations
+- Multiple locations support in post/put/patch to HistoricalLocations
+- Fixed error when $filter contained spaces
+- Fixed crash when $ref requested
+- Fixed error on posting locations
+- Fixed location/name returns encodingType
+- Fixed patch datastream
+docker:
+- geodan/gost:0.3
+- geodan/gost-db:0.3
+binaries:
+- https://github.com/Geodan/gost/releases/tag/0.3
+---
+Test ikel 
