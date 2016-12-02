@@ -24,7 +24,7 @@ we started pushing gyroscope sensor readings from a phone to GOST using [MQTT](h
 To show how easy it is to also do something with the live data we created a Node-RED flow which sended an
 automated tweet when the phone screen was facing down.
 
-Som complete installation, configuration, sensor information publishing and event stream processing all working live on stage in 10 minutes, success...
+So complete installation, configuration, sensor information publishing and event stream processing all working live on stage in 10 minutes, success...
 
 ![image](/assets/img/blog/tweet_geobuzz.jpg){:class="img-responsive center-image"}
 
