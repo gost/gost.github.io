@@ -55,13 +55,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #ogc-logo{
-    display: block;
+    transform: translate(-150px, 0px);
+    position: absolute;
+    margin-top: -107px;
     background: #fff;
     width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: -32px;
+    left: 50%;
     border-radius: 13px;
 }
 
@@ -148,6 +147,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-bottom: 90px;
 }
 
 .install h1 {
