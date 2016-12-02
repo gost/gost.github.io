@@ -20,7 +20,7 @@ The presentation slides does not have much text and probably needs some explanat
 In the demo we wanted to show how easy it is to work with OGC SensorThings API and GOST and reserved 10 minutes for it.
 Maybe it was a bit technical but after 10 minutes we had a new instance of GOST running including [PostGIS](http://www.postgis.net/), [Mosquitto](https://mosquitto.org/) 
 and [Node-RED](https://nodered.org/) using [Docker](https://www.docker.com/). After adding a Thing, Location, Datastream, Sensor and ObservedProperty using [Postman](https://www.getpostman.com/) and explaining it
-we started pushing gyroscope sensor readings from a phone to GOST using MQTT showing a live graph in the GOST dashboard. 
+we started pushing gyroscope sensor readings from a phone to GOST using [MQTT](http://mqtt.org) showing a live graph in the GOST dashboard. 
 To show how easy it is to also do something with the live data we created a Node-RED flow which sended an
 automated tweet when the phone screen was facing down.
 
