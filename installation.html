@@ -8,10 +8,10 @@ permalink: /installation/
     <div class="container install">
         <div>
             <h1>Docker</h1>
-            For getting GOST to work in Docker there are two images available on Docker Hub:</br>
-            For service and dashboard: [https://hub.docker.com/r/geodan/gost/]</br>
-            For database: [https://hub.docker.com/r/geodan/gost-db/]</br>
-            The docker images can run separately, or running in a combined way using the Dockercompose file.</br></br>
+            For getting GOST to work in Docker there are two images available on Docker Hub:<br/>
+            For service and dashboard: [https://hub.docker.com/r/geodan/gost/]<br/>
+            For database: [https://hub.docker.com/r/geodan/gost-db/]<br/>
+            The docker images can run separately, or running in a combined way using the Dockercompose file.<br/><br/>
             If you want to use the latest (unstable) build of GOST, you can use the automated builds found here: [https://hub.docker.com/r/geodan/gost-nightly/] and here: [https://hub.docker.com/r/geodan/gost-db-nightly/] there is no guarantee these images will run correctly.
 
             <h2>Running GOST with Docker-compose</h2>
@@ -26,7 +26,7 @@ permalink: /installation/
             <pre><code>
             . $ docker run -p 5432:5432 -e POSTGRES_DB=gost geodan/gost-db
             </code></pre>
-            Connect in pgadmin with localhost:5432 postgres/postgres</br>
+            Connect in pgadmin with localhost:5432 postgres/postgres<br/>
 
             GOST schema is in schema postgres.v1</br>
 
@@ -34,22 +34,22 @@ permalink: /installation/
             <pre><code>
             $ docker run -p 8080:8080 --link gost-db:gost-db -e gost_db_host=gost-db geodan/gost
             </code></pre>
-            GOST is available at http://localhost:8080</br>
+            GOST is available at http://localhost:8080<br/>
 
-            For making connection to external database use environmental variables gost_db_host, gost_db_port, gost_db_user, gost_db_password:</br>
-            For example:</br>
-            docker run -p 8080:8080 -t -e gost_db_host=192.168.40.10 -e gost_db_database=gost geodan/gost</br>
+            For making connection to external database use environmental variables gost_db_host, gost_db_port, gost_db_user, gost_db_password:<br/>
+            For example:<br/>
+            docker run -p 8080:8080 -t -e gost_db_host=192.168.40.10 -e gost_db_database=gost geodan/gost<br/>
         </div>
         <div>
             <h1>Binaries</h1>
-            .....</br>
+            .....<br/>
         </div>
         <div>
             <h1>Building latest version</h1>
-            1) Install GoLang (https://golang.org/)</br>
-            2) Install Postgresql (http://www.postgresql.org/) and PostGIS</br>
-            Create a database and run "CREATE EXTENSION postgis;" on it</br>
-            3) Clone code</br>
+            1) Install GoLang (https://golang.org/)<br/>
+            2) Install Postgresql (http://www.postgresql.org/) and PostGIS<br/>
+            Create a database and run "CREATE EXTENSION postgis;" on it<br/>
+            3) Clone code<br/>
             <pre><code>
             git clone https://github.com/Geodan/gost.git
             </code></pre>
@@ -60,8 +60,8 @@ permalink: /installation/
             go get github.com/lib/pq
             go get github.com/eclipse/paho.mqtt.golang
             </code></pre>
-            5) Edit config.yaml or set environment settings to change connection to database</br>
-            6) Create GOST schema</br>
+            5) Edit config.yaml or set environment settings to change connection to database<br/>
+            6) Create GOST schema<br/>
             <pre><code>
             execute sql found under docker/test1.sql
             </code></pre>
@@ -70,7 +70,7 @@ permalink: /installation/
             go run main.go
             </code></pre>
             8) In browser open http://localhost:8080/v1.0 to test if the server is running
-            </br></br></br>
+            <br/><br/>
         </div>
-    </div><! --/container -->
-</div><! --/service -->
+    </div>
+</div>

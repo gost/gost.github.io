@@ -7,27 +7,23 @@ layout: default
 
 <div class="container mtb">
     <div class="row">
-
-        <! -- CHANGELOG POSTS LIST -->
         <div class="col-lg-8">
             <div class="changelog">
                 <h1>GOST {{ page.version }} - {{ page.published }}</h1>
                 <ul>
                     {% for change in page.changes %}
-                    <p>
                     <li>{{ change }}</li>
-                    </p>
                     {% endfor %}
                 </ul>
                 <h3>DOCKER</h3>
                 {% for d in page.docker %}
-                    <a href="https://hub.docker.com/r/geodan/gost/tags/">{{ d }}</a></br>
+                    <a href="https://hub.docker.com/r/geodan/gost/tags/">{{ d }}</a><br />
                 {% endfor %}
                 <h3>BINARIES</h3>
                 <a href="{{ post.binaries }}">DOWNLOAD PAGE</a>
             </div>
             <div class="hline"></div>
             <div class="spacing"></div>
-        </div><! --/col-lg-8 -->
-    </div><! --/row -->
-</div><! --/container -->
+        </div>
+    </div>
+</div>

@@ -6,22 +6,18 @@ permalink: /changelog/
 
 <div class="container mtb">
     <div class="row">
-
-        <! -- CHANGELOG POSTS LIST -->
         <div class="col-lg-8">
             {% for post in site.categories['changelog'] %}
             <div class="changelog">
                 <h1>GOST {{ post.version }} - {{ post.published }}</h1>
                 <ul>
                     {% for change in post.changes %}
-                    <p>
                         <li>{{ change }}</li>
-                    </p>
                     {% endfor %}
                 </ul>
                 <h3>DOCKER</h3>
                 {% for d in post.docker %}
-                    <a href="https://hub.docker.com/r/geodan/gost/tags/">{{ d }}</a></br>
+                    <a href="https://hub.docker.com/r/geodan/gost/tags/">{{ d }}</a><br />
                 {% endfor %}
                 <h3>BINARIES</h3>
                 <a href="{{ post.binaries }}">DOWNLOAD PAGE</a>
@@ -29,6 +25,6 @@ permalink: /changelog/
             <div class="hline"></div>
             <div class="spacing"></div>
             {% endfor %}
-        </div><! --/col-lg-8 -->
-    </div><! --/row -->
-</div><! --/container -->
+        </div>
+    </div>
+</div>
