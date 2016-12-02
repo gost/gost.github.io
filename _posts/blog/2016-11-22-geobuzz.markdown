@@ -13,10 +13,10 @@ thumb: thumb01.jpg
 OSGeo.nl invited Bert and me to give a presentation about SensorThings and our open-source solution GOST during the [OSGeo.nl](https://osgeo.nl/) day which took place at the yearly [GeoBuzz](http://geobuzz.nl/) conference in 's-Hertogenbosh The Netherlands.
 <!--more-->
 
-###Presentation slides
+### Presentation slides
 The presentation slides does not have much text and probably needs some explanation but if you want to take a look than you can find it [here](https://docs.google.com/a/geodan.nl/presentation/d/1THqF9LFUiNv6voH05IPtdPQhcp1wcRG5szBvtW4Mkmg/edit?usp=sharing) 
 
-###Demo
+### Demo
 In the demo we wanted to show how easy it is to work with OGC SensorThings API and GOST and reserved 10 minutes for it.
 Maybe it was a bit technical but after 10 minutes we had a new instance of GOST running including PostGIS, Mosquitto 
 and Node-RED using docker-compose. After adding a Thing, Location, Datastream, Sensor and ObservedProperty using Postman and explaining it
