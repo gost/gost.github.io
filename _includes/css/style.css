@@ -12,10 +12,10 @@
 /*	################################################################
 	1. GENERAL STRUCTURES
 ################################################################# */
-	* { 
-		margin: 0;
-		padding: 0px;
-	} 
+* {
+    margin: 0;
+    padding: 0px;
+}
 
 .center-image
 {
@@ -40,6 +40,10 @@ h1, h2, h3, h4, h5, h6 {
 .fa {
     font-size: 50px;
     color: #d3623b !important;
+}
+
+.contact-form input{
+    max-width: 250px;
 }
 
 #moby{
@@ -548,7 +552,7 @@ small {
 /* Contact Page */
 #contactwrap {
 	background: url(../img/contact.jpg) no-repeat center top;
-	margin-top: -60px;
+	margin-top: -20px;
 	padding-top:0px;
 	text-align:center;
 	background-attachment: relative;
