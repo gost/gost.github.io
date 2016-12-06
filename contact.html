@@ -11,7 +11,7 @@ permalink: /contact/
             <h1>Just Get In Touch!</h1>
             <p>Having issues or questions? Use the issues page on <a href="https://github.com/Geodan/gost/issues">github</a> or send us a message directly by filling in the form below</p>
             <div class="container">
-                <form id="contactform" method="POST" >
+                <form id="contactform" method="POST" onsubmit="return send()">
                     <div class="form-group contact-form">
                         <label for="name">Name:</label>
                         <input id="name" type="text" name="name" class="form-control" ><br/>
@@ -27,7 +27,15 @@ permalink: /contact/
             </div>
             <script>
                 var contactform =  document.getElementById('contactform');
-                contactform.setAttribute('action', '//formspree.io/' + 'tim.ebben' + '@' + 'geodan' + '.' + 'nl');
+                contactform.setAttribute('action', '//qfqoqrqmqsqpqrqqqeqeq.qiqoq/' + 'qtqimq.qeqbqbqeqn' + '@q' + 'gqeqoqdaqnq' + '.' + 'qnqlq');
+            </script>
+            <script>
+                function send() {
+                    var cf = document.getElementById('contactform');
+                    var a = cf.getAttribute('action');
+                    cf.setAttribute('action', a.replace(/q/g, ""));
+                    return true;
+                }
             </script>
         </div>
 
