@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #moby{
     display: block;
-    width: 400px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -50px;
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     margin-top: -107px;
     background: #fff;
-    width: 300px;
+    max-width: 300px;
     left: 50%;
     border-radius: 13px;
 }
@@ -101,13 +101,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gost-desc h1 {
-    font-size: 110px;
+    font-size: 100px;
     font-weight: 800;
     color: #505151;
 }
 
 .gost-desc h2 {
-    font-size: 80px;
+    font-size: 75px;
     font-weight: 400;
     letter-spacing: 5px;
     color: #505151;
