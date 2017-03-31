@@ -1,0 +1,23 @@
+---
+layout: changelog
+version: "V0.4"
+published: "2017-03-31"
+categories: 
+- changelog 
+changes: 
+- ODATA $expand and $filter working (minimal implementation to pass the [Level 3 OGC tests](https://github.com/opengeospatial/ets-sta10/tree/master/src/main/java/org/opengis/cite/sta10/filteringExtension))
+- HTTPS support
+- Sensor Metadata can be bigger than 255 characters now
+- MaxEntityResponse can be set in the config to set the default and max entities that can be retrieved at a time
+- IndentJSON can be set in the config to true (indent the JSON response) or false (Do not indent JSON response)
+- All settings can now be set trough environment variables, before some settings were limited to config.yaml, for a list check [here](https://github.com/Geodan/gost/blob/master/docs/gost_configuration.md)
+- Filtering on JSON properties, example: Things?$filter=properties/type eq 'parking'
+
+Use [gost-db release 0.4](https://github.com/Geodan/gost-db/releases/tag/0.4) with this release, docker image for gost-db can be found [here](https://hub.docker.com/r/geodan/gost-db/tags/)
+docker:
+- geodan/gost:0.4
+- geodan/gost-db:0.4
+binaries:
+- https://github.com/Geodan/gost/releases/tag/0.4
+thumb: gost.png
+---
