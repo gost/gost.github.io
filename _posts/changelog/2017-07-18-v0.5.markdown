@@ -9,11 +9,11 @@ changes:
 - Dashboard removed from gost, can now be found here
 - More $filter operators, for a list check here
 - Using Godata package for odata queries
-- Using HTTP header X-Forwarded-Server 
-- Auto added observation phenomenonTime only adding 3 figure number for milliseconds: 2017-07-18T07:03:10.089Z
-- Fix: Not all data is returned on larger datasets or on many expands
-- Fix: Lockup when MQTT is disabled from settings and gost could not connect
-- Fix: Lockup because of an unclosed database connection
+- Using HTTP header X-Forwarded-Server
+- Auto added observation phenomenonTime only adding 3 figure number for milliseconds (2017-07-18T07:03:10.089Z)
+- Fix - Not all data is returned on larger datasets or on many expands
+- Fix - Lockup when MQTT is disabled from settings and gost could not connect
+- Fix - Lockup because of an unclosed database connection
 docker:
 - geodan/gost:0.5
 - geodan/gost-db:0.5
