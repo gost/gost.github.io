@@ -1,0 +1,68 @@
+---
+layout: tutorials
+title: GOST docker installation
+permalink: /tutorials-installation-docker/
+---
+<div id="service">
+	<div class="container">
+		<div>
+			For getting GOST to work in Docker there are three images available on Docker Hub
+			<li><a href="https://hub.docker.com/r/geodan/gost/">Server</a> containing the GOST server</li>
+			<li><a href="https://hub.docker.com/r/geodan/gost-db/">Database</a> containing an already configured postgis database</li>
+			<li><a href="https://hub.docker.com/r/geodan/gost-dashboard/">Dashboard</a> containing nginx and the GOST dashboard</li>
+			</br>
+			For more information about the containers check the projects on github: <a href="https://github.com/gost/server">server</a> - <a href="https://github.com/gost/gost-db">gost-db</a> - <a href="https://github.com/gost/dashboard">gost-dashboard</a>
+			</br>
+			The docker images can run separately, or running in a combined way using the Dockercompose file.
+
+			<h2>Prerequisites</h2>
+			Verify that Docker is installed with command 'docker info'. This command should display system-wide Docker information. If this is not the case please install Docker engine, procedure for every platform can be found <a href="https://docs.docker.com/engine/installation/">here</a> When using docker-compose be sure that docker-compose is installed as well, to do this run command 'docker-compose -- version', version should be 1.10 or greater. Installation instructions for docker-compose can be found <a href="https://docs.docker.com/compose/install/">here</a>
+			
+			<h2>Running GOST with Docker-compose</h2>
+			Our default docker-compose file comes with a MQTT server (Mosquitto) and Node-RED, a handy tool that can be used with GOST, a GOST/Node-RED tutorial will be added in the future.
+			</br></br>
+
+			Use the tag latest for the latest development version, otherwise use a tag like '0.5' for more stable versions. 
+
+			</br></br>
+
+			<b>Running (unstable) latest build of GOST</b>
+			</br></br>
+			<pre><code>
+			$ wget https://raw.githubusercontent.com/gost/docker-compose/master/docker-compose.yml 
+			$ docker-compose up
+			</code></pre>
+			</br>
+			<b>Running (stable) 0.5 build of GOST</b>
+			</br></br>
+			<pre><code>
+			$ wget https://raw.githubusercontent.com/gost/docker-compose/master/docker-compose-0.5.yml 
+			$ docker-compose -f docker-compose-0.5.yml up
+			</code></pre>
+
+			<h2>Running GOST with docker run</h2>
+			1) Start geodan/gost-db which creates an user postgres with password postgres and initialises a database named gost</br>
+			2) Start geodan/gost and set info to connect to gost-db, gost will be available at http://localhost:8080/v1.0</br>
+			3) Start geodan/gost-dashboard and link gost to use GOST trough nginx, gost + dashboard available at http://localhost:8081
+			</br></br>
+			<pre><code>
+			$ docker run -d -p 5432:5432 -e POSTGRES_DB=gost -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres --name gost-db geodan/gost-db:0.5</br>
+			$ docker run -d -p 8080:8080 --link gost-db:gost-db -e gost_db_host=gost-db -e gost_db_user=postgres -e gost_db_password=postgres --name gost geodan/gost:0.5</br>
+			$ docker run -d -p 8081:8080 --link gost:gost --name gost-dashboard geodan/gost-dashboard:0.5			
+			</code></pre>
+			
+			
+			</br>
+
+			For making connection to external database use environmental variables gost_db_host, gost_db_port, gost_db_user, gost_db_password
+			</br></br>
+			<pre><code>
+			$ docker run -d -p 8080:8080 -t -e gost_db_host=192.168.40.10 -e gost_db_database=gost --name gost geodan/gost:0.5
+			</code></pre>
+
+			</br>
+
+		</div>
+	</div>
+
+</div>

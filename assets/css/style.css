@@ -354,13 +354,11 @@ a:focus {
 }
 
 pre {
-    font-size: 90%;
+    font-size: 80%;
     line-height: 1.2em;
     font-family: "Courier 10 Pitch", Courier, monospace;
-    white-space: pre;
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -o-pre-wrap;
+    white-space: normal;
+
 
     height:1%;
     width: auto;
@@ -368,7 +366,7 @@ pre {
     clear: both;
     color: #555555;
     padding: 1em 1em;
-    margin: auto 40px auto 40px;
+    margin: auto 20px auto 20px;
     background: #f4f4f4;
     border: solid 1px #e1e1e1
 }
@@ -376,7 +374,7 @@ code {
     font-size: 90%;
     line-height: 1.2em;
     font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-
+    white-space: normal !important;
     display: inline;
     color: #555555;
     padding: 1em 1em;
