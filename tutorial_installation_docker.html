@@ -47,7 +47,7 @@ permalink: /tutorials-installation-docker/
 			</br></br>
 			<pre><code>
 			$ docker run -d -p 5432:5432 -e POSTGRES_DB=gost -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres --name gost-db geodan/gost-db:0.5</br>
-			$ docker run -d -p 8080:8080 --link gost-db:gost-db -e gost_db_host=gost-db -e gost_db_user=postgres -e gost_db_password=postgres --name gost geodan/gost:0.5</br>
+			$ docker run -d -p 8080:8080 --link gost-db:gost-db -e GOST_DB_HOST=gost-db -e GOST_DB_USER=postgres -e GOST_DB_PASSWORD=postgres --name gost geodan/gost:0.5</br>
 			$ docker run -d -p 8081:8080 --link gost:gost --name gost-dashboard geodan/gost-dashboard:0.5			
 			</code></pre>
 			
@@ -57,7 +57,7 @@ permalink: /tutorials-installation-docker/
 			For making connection to external database use environmental variables gost_db_host, gost_db_port, gost_db_user, gost_db_password
 			</br></br>
 			<pre><code>
-			$ docker run -d -p 8080:8080 -t -e gost_db_host=192.168.40.10 -e gost_db_database=gost --name gost geodan/gost:0.5
+			$ docker run -d -p 8080:8080 -t -e GOST_DB_HOST=192.168.40.10 -e GOST_DB_DATABASE=gost --name gost geodan/gost:0.5
 			</code></pre>
 
 			</br>
