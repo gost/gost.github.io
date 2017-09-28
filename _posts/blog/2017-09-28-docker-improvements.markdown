@@ -18,7 +18,7 @@ The default deployment option for GOST is using Docker images. At the moment, we
 
 ### Small, Smaller, Smallest
 
-We try to keep the Docker images as small as possible. Small images means really fast deployment and operation. In the last year, the GOST server image is reduced in size from 400MB to 10MB :-) We were able to create really small using two techniques: 
+We try to keep the Docker images as small as possible. Small images means really fast deployment and operation. In the last year, the GOST server image is reduced in size from 400MB to 10MB :-) We were able to create really small images using two techniques: 
 
 1] Alpine 
 
