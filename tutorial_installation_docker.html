@@ -9,7 +9,7 @@ permalink: /tutorials-installation-docker/
 			For getting GOST to work in Docker there are three images available on Docker Hub
 			<li><a href="https://hub.docker.com/r/geodan/gost/">geodan/gost</a>: image containing the GOST server</li>
 			<li><a href="https://hub.docker.com/r/geodan/gost-db/">geodan/gost-db</a> image containing the PostGIS database</li>
-			<li><a href="https://hub.docker.com/r/geodan/gost-dashboard/">geodan/gost/ashboard</a> Image containing NGINX and the GOST dashboard</li>
+			<li><a href="https://hub.docker.com/r/geodan/gost-dashboard/">geodan/gost-dashboard</a> Image containing NGINX and the GOST dashboard</li>
 			</br>
 			For more information about the containers check the projects on GitHub: 
 			
@@ -22,7 +22,10 @@ permalink: /tutorials-installation-docker/
 
 			<h2>Prerequisites</h2>
 			Verify that Docker is installed with command 'docker info'. This command should display system-wide Docker information. 
-			If this is not the case please install Docker engine, procedure for every platform can be found <a href="https://docs.docker.com/engine/installation/">here</a> When using docker-compose be sure that docker-compose is installed as well, to do this run command 'docker-compose -- version', version should be 1.10 or greater. Installation instructions for docker-compose can be found <a href="https://docs.docker.com/compose/install/">here</a>
+			If this is not the case please install Docker engine, procedure for every platform can be found 
+			<a href="https://docs.docker.com/engine/installation/">here</a>. When using docker-compose be sure that docker-compose 
+			is installed as well. Run command 'docker-compose -- version', version should be 1.10 or greater. 
+			Installation instructions for docker-compose can be found <a href="https://docs.docker.com/compose/install/">here</a>.
 			
 			<h2>Running GOST with Docker-compose</h2>
 			The default docker-compose file comes with a MQTT server (Mosquitto) and Node-RED. 
