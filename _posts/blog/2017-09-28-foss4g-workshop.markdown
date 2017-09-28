@@ -15,5 +15,5 @@ In a few hours, the participants were able to install, configure and visualize s
 
 ![image](/assets/img/blog/workshop.png){:class="img-responsive center-image" alt="tweet end demo"}
 
-The workshop material is available online so you can replay the workshop on your own time. Get started: <a href="https://github.com/gost/workshops/blob/master/2017_foss4g_boston/1_introduction.md">https://github.com/gost/workshops/blob/master/2017_foss4g_boston/1_introduction.md<a/>. If you've any questions about the workshop just <a href="https://www.gostserver.xyz/contact/">contact</a> us.
+The workshop material is available online so you can replay the workshop in your own time. Get started: <a href="https://github.com/gost/workshops/blob/master/2017_foss4g_boston/1_introduction.md">https://github.com/gost/workshops/blob/master/2017_foss4g_boston/1_introduction.md<a/>. If you've any questions about the workshop just <a href="https://www.gostserver.xyz/contact/">contact</a> us.
 
