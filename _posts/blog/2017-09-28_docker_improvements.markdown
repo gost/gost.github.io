@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "GOST Docker improvements"
-date: 2017-09-28 11:31:00
+date: 2017-09-28 12:30:00
 author: Bert
 categories: 
 - blog
+- docker
 ---
 
 The default deployment option for GOST is using Docker images. At the moment, we have three Docker images:
