@@ -9,7 +9,7 @@ categories:
 - docker
 ---
 
-On the Raspberry Pi, GOST is running in a  Docker environment. Pretty crazy at first thought but it works really well. The recommended option is to install <a href="https://blog.hypriot.com/">Hypriot</a> on the Raspberry Pi. There are separate GOST Docker images for Raspberry Pi, they have the prefix 'rpi':
+On the Raspberry Pi, GOST is running in a  Docker environment. Pretty crazy at first thought but it works really well. The recommended option is to install <a href="https://blog.hypriot.com/">Hypriot</a> on the Raspberry Pi, it has the Docker tools preinstalled. There are separate GOST Docker images for Raspberry Pi, they have the prefix 'rpi':
 
 - <a href="https://hub.docker.com/r/geodan/gost/">geodan/rpi-gost</a>: Raspberry Pi image containing the GOST server;
 
