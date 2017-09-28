@@ -6,7 +6,7 @@ author: Bert
 categories: 
 - blog
 - Raspberry Pi
-- Docker
+- docker
 ---
 
 On the Raspberry Pi, GOST is running in a  Docker environment. Pretty crazy at first thought but it works really well. The recommended option is to install <a href="https://blog.hypriot.com/">Hypriot</a> on the Raspberry Pi. There are separate GOST Docker images for Raspberry Pi, they have the prefix 'rpi':
