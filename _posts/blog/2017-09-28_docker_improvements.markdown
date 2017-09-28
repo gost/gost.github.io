@@ -26,7 +26,7 @@ The GOST images are now based on Alpine images. Alpine is minimal Docker image b
 
 2] Use multi-stage builds
 
-Multi-stage builds is a new feature in Docker tooling. This techique allows to only deploy the resulting binaries in the image. More information about Docker multi-stage builds: <a href="https://docs.docker.com/engine/userguide/eng-image/multistage-build/">https://docs.docker.com/engine/userguide/eng-image/multistage-build/</a>
+Multi-stage builds is a new feature in Docker tooling. This techique allows to only deploy the resulting binaries in the image. For more information about Docker multi-stage builds: <a href="https://docs.docker.com/engine/userguide/eng-image/multistage-build/">https://docs.docker.com/engine/userguide/eng-image/multistage-build/</a>
 
 
 
