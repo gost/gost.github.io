@@ -9,7 +9,7 @@ categories:
 ---
 
 Last August we travelled to Boston to visit the <a href="http://2017.foss4g.org/">FOSS4G conference</a> and gave a workshop about SensorThings API and GOST.
-See for full description of the workshop <a href="http://2017.foss4g.org/workshop-signup/#openModal-107">here</a>.
+See for full description of the workshop see <a href="http://2017.foss4g.org/workshop-signup/#openModal-107">here</a>.
 
 In a few hours, the participants were able to install, configure and visualize sensor information and learn more about SensorThings API, Docker, MQTT, HTTP, Postman and Node-RED.
 
