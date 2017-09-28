@@ -10,11 +10,11 @@ categories:
 
 The default deployment option for GOST is using Docker images. At the moment, we have three Docker images:
 
-- <a href="https://hub.docker.com/r/geodan/gost/">geodan/gost</a>: Image containing the server
+- <a href="https://hub.docker.com/r/geodan/gost/">geodan/gost</a>: Image containing the GOST server
 
-- <a href= "https://hub.docker.com/r/geodan/gost-db/">geodan/gost-db</a>: Image containing the database
+- <a href= "https://hub.docker.com/r/geodan/gost-db/">geodan/gost-db</a>: Image containing the GOST database
 
-- <a href="https://hub.docker.com/r/geodan/gost-dashboard">geodan/gost-dashboard</a>: Image containing front-end proxy (NGINX) and dashboard
+- <a href="https://hub.docker.com/r/geodan/gost-dashboard">geodan/gost-dashboard</a>: Image containing front-end proxy (NGINX) and GOST dashboard
 
 ### Small, Smaller, Smallest
 
