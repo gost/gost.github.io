@@ -1,3 +1,13 @@
+---
+layout: post
+title: "GOST and Kubernetes"
+date: 2017-10-02 11:49:00
+author: Bert
+categories: 
+- blog
+- Kubernetes
+- docker
+---
 Kubernetes is an open source system for managing containerized applications across multiple hosts, providing basic mechanisms for deployment, maintenance, and scaling of applications.
 
 Kubernetes builds upon a decade and a half of experience at Google running production workloads at scale.
