@@ -42,13 +42,11 @@ Step 4: Install Kompose
 
 Kompose is a tool to convert from the docker-compose world to the Kubernetes world.
 
-```
+<pre><code>
 $ curl -L https://github.com/kubernetes/kompose/releases/download/v1.2.0/kompose-linux-amd64 -o kompose
-
 $ chmod +x kompose
-
 $ sudo mv ./kompose /usr/local/bin/kompose
-```
+</code></pre>
 
 Step 5: Run GOST in Kubernetes
 
