@@ -57,7 +57,8 @@ $ kompose up
 Step 6: Get the ip and port of GOST
 
 ```
-$ minikube service dashboard --url 
+$ minikube service dashboard --url
+ 
 http://192.168.99.100:30648
 ```
 
