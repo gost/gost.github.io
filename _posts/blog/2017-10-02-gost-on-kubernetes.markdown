@@ -12,9 +12,9 @@ Kubernetes is an open source system for managing containerized applications acro
 
 Kubernetes builds upon a decade and a half of experience at Google running production workloads at scale.
 
-In this blog we are going to run GOST in Kubernetes. We are using a small edition of Kubernetes called Minikube to test things out. Minikube is a tool that makes it easy to run Kubernetes locally. Minikube runs a single-node Kubernetes cluster inside a VM on your laptop.
+In this blog we are going to run GOST in Kubernetes. We are using a small edition of Kubernetes called Minikube to test things out. Minikube runs a single-node Kubernetes cluster inside a VM on your laptop.
 
-So step 1 is to install MiniKube, you can find installation instructions for Mac, Linux and Windows at https://kubernetes.io/docs/tasks/tools/install-kubectl/
+So step 1 is to install Minikube, you can find installation instructions for Mac, Linux and Windows at https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 Step 2 is to start the Minikube cluster:
 
@@ -62,6 +62,3 @@ http://192.168.99.100:30648
 ```
 
 Now you should be able to get the GOST dashboard in your browser at http://192.168.99.100:30648
-
-
-
