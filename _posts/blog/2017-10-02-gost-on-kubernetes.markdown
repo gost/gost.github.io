@@ -58,8 +58,8 @@ Step 6: Get the ip and port of GOST
 
 ```
 $ minikube service dashboard --url
- 
-http://192.168.99.100:30648
 ```
+
+Sample response: http://192.168.99.100:30648
 
 Now you should be able to get the GOST dashboard in your browser at http://192.168.99.100:30648
