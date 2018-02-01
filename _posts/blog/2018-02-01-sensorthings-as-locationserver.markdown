@@ -57,6 +57,7 @@ $ curl -X POST 'http://localhost:8080/v1.0/Things(1)/Locations' -H 'Content-Type
 }
 }'
 ```
+Result: Location id = 2 is created
 
 Step 4: Request actual position of Thing(1)
 
