@@ -162,7 +162,7 @@ Response:
 
 Result: Using the $expand operator ($expand=HistoricalLocations/Locations) The Trail of the Thing is returned (Location 1 and 2). 
 
-In a client (mapping) application, we can use the actual position and trail to visualize the location/trail of the Thing. Another option to get the actual position of the Thing is to use MQTT using a subscribe on topic 'Things(1)/Locations' and get push notifications when position changes. 
+In a client (mapping) application, we can now visualize the location/trail of the Thing. Another option to get the actual position of the Thing is to use MQTT using a subscribe on topic 'Things(1)/Locations' and get push notifications when position changes. 
 
 
 
