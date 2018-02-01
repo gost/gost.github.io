@@ -40,6 +40,7 @@ $ curl -X POST 'http://localhost:8080/v1.0/Things(1)/Locations' -H 'Content-Type
         "coordinates": [0, 0]
 }
 }'
+```
 
 Result: Location id = 1 is created
 
