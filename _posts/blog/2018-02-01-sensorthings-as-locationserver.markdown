@@ -62,7 +62,11 @@ Step 4: Request actual position of Thing(1)
 
 ```
 $ curl 'http://localhost:8080/v1.0/Things(1)/Locations'
+```
 
+Response:
+
+```
 {
    "value": [
       {
@@ -90,7 +94,11 @@ Step 5: Request the trail of Thing(1)
 
 ```
 $ curl 'http://localhost:8080/v1.0/Things(1)?$expand=HistoricalLocations/Locations'
+```
 
+Response:
+
+```
 {
    "@iot.id": 1,
    "@iot.selfLink": "http://localhost:8080/v1.0/Things(1)",
@@ -153,7 +161,7 @@ $ curl 'http://localhost:8080/v1.0/Things(1)?$expand=HistoricalLocations/Locatio
 
 Result: Using the $expand operator on =HistoricalLocations/Locations ($expand=HistoricalLocations/Locations) The Trail of the Thing is returned (Location 1 and 2). 
 
-In a client (mapping) application, we can use the actual position and trail to visualize the location/trail of the Things. Another option to get the actual position of the Thing is to use MQTT using a subscribe on topic 'Things1/Locations'. 
+In a client (mapping) application, we can use the actual position and trail to visualize the location/trail of the Thing. Another option to get the actual position of the Thing is to use MQTT using a subscribe on topic 'Things(1)/Locations' and get push notifications when position changes. 
 
 
 
