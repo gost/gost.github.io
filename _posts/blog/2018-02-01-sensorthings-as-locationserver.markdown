@@ -7,7 +7,7 @@ categories:
 - blog
 - SensorThings
 ---
-In most cases a SensorThings 'Thing' will have a static Location. For example a wheaterstation will not move around usually. But in some usecases the Thing will move 
+In most cases a SensorThings 'Thing' will have a static Location. For example a weatherstation will not move around usually. But in some usecases the Thing will move 
 around and leave a trail of locations while measuring Observations. Think about usecases like getting sensor data from moving drones, phones, players in a soccer field or autonomous cars.
 
 In the SensorThings API there is support for storing and retrieving the actual position and Trail of a Thing.
