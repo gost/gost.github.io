@@ -158,7 +158,7 @@ Response:
       }
    ]
 }
-````
+```
 
 Result: Using the $expand operator on =HistoricalLocations/Locations ($expand=HistoricalLocations/Locations) The Trail of the Thing is returned (Location 1 and 2). 
 
