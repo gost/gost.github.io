@@ -67,7 +67,7 @@ $ curl 'http://localhost:8080/v1.0/Things(1)/Locations'
 
 Response:
 
-```
+```json
 {
    "value": [
       {
